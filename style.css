@@ -58,12 +58,13 @@ body {
     margin-top: 25px;
 }
 
-.color-square {
+#color-square {
     border: solid #64fcf2 1px;
     border-radius: 3px;
     height: 36px;
     width: 84px;
-    
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
 }
 
 .color-alts {
@@ -79,7 +80,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 .color-options {
@@ -87,9 +88,15 @@ body {
     flex-direction: column;
     height: 56px;
     width: 240px;
-    margin-top: 30px;
-    margin-right: 10px;
+    margin-top: 30px; 
     gap: 0px;
+}
+
+.toggle-options {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    margin-top: 60px;
 }
 
 #text2 {
@@ -104,7 +111,52 @@ body {
     width: 100%;
     margin-bottom: 10px;
     cursor: pointer;
+    transition: background-color 0.1s ease;
 }
 
+#text2:active {
+    background-color: rgb(110, 117, 128);
+}
 
+.slider-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#range-slider {
+    width: 240px;
+    height: 2px;
+    appearance: none;
+    outline: none;
+    border-radius: 2px;
+    margin-top: 30px;
+    background-color: #64fcf2;
+}
+
+#range-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px; /* adjust width as needed */
+    height: 20px; /* adjust height as needed */
+    background: linear-gradient(hsla(270, 2%, 19%, 0.95), hsla(192, 56%, 43%, 0.95)); /* replace with your desired color */
+    cursor: pointer;
+    border-radius: 50%; /* for circular shape */
+}
+  
+#range-slider::-moz-range-thumb {
+    width: 20px; /* adjust width as needed */
+    height: 20px; /* adjust height as needed */
+    background: #64fcf2; /* replace with your desired color */
+    cursor: pointer;
+    border-radius: 50%; /* for circular shape */
+}
+
+.grid-n-clear {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 240px;
+    gap: 15px;
+}
 

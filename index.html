@@ -15,18 +15,39 @@
           <div class="menu-box">
             <div class="color-alts">
             <div class="color-boxes">
-                <div class="color-square"></div>
-                <div class="color-square"></div>
+                <button id="color-square"></button>
+                <button id="color-square"></button>
             </div>
             <div class="color-text">
-                <div class="text">Pen color</div>
-                <div class="text">Background color</div>
+                <div class="text">Pen Color</div>
+                <div class="text">Background Color</div>
             </div>
           </div>
           <div class="color-options">
             <button id="text2">Color Fill</button>
             <button id="text2">Color Grabber</button>
           </div>
+          <div class="toggle-options">
+            <button id="text2">Toggle Eraser</button>
+            <button id="text2">Toggle Rainbow</button>
+            <button id="text2">Toggle Shading</button>
+            <button id="text2">Toggle Lighten</button>
+          </div>
+          <div class="slider-box">
+            <input type="range" value="24" min="1" max="60" id="range-slider" 
+            onmousemove="rangeSliderValue(this.value)">
+            <div id="progress-bar" style="width: 40%;"></div>
+          </div>
+          <p class="grid-size">
+            Grid size: 
+            <span id="range-value">24</span>
+             x 
+            <span id="range-value">24</span>
+          </p>
+          <div class="grid-n-clear">
+          <button id="text2">Toggle Grid Lines</button>
+          <button id="text2">Clear</button>
+        </div>
         </div>
       <div class="sketch-box"></div>
     </div>
