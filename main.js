@@ -6,6 +6,8 @@ const eraser = document.getElementById('eraser');
 const rainbow = document.getElementById('rainbow');
 const shading = document.getElementById('shading');
 const lighten = document.getElementById('lighten')
+const rangeSlider = document.getElementById('range-slider');
+const rangeValue = document.querySelectorAll('.range-value');
 const gridLines = document.getElementById('grid-lines');
 const clear = document.getElementById('clear');
 
@@ -13,6 +15,7 @@ const clear = document.getElementById('clear');
 let mouseIsDown = false;
 let isEraserActive = false;
 let isGridlinesActive = false;
+let globalNumValue = Number(rangeSlider.value);
 
 
 //eventlisteners
@@ -38,6 +41,15 @@ buttons.forEach(button => {
         button.classList.toggle('active');
     });
 });
+
+/*rangeSlider.addEventListener('input', function() {
+    const numValue = Number(rangeSlider.value);
+    globalNumValue = numValue;
+    rangeValue.forEach(rangeValue => rangeValue.textContent = rangeSlider.value);
+
+    console.log(globalNumValue);
+});
+*/
 
 //functions
 
@@ -68,6 +80,7 @@ function clearGridLines() {
 }
 
 function createGrid(numOfSquares) {
+    container.innerHTML = '';
     for (let i = 0; i < numOfSquares; i++) {
         let square = document.createElement('div');
         square.className = 'square';
@@ -95,8 +108,26 @@ function createGrid(numOfSquares) {
 }
 
 
+
 function startDrawing() {
-    createGrid(121);
+    rangeSlider.addEventListener('input', function() {
+        const numValue = Number(rangeSlider.value);
+        globalNumValue = numValue;
+        rangeValue.forEach(rangeValue => rangeValue.textContent = rangeSlider.value);
+    
+    const squaresPerRow = globalNumValue;
+    const numOfSquares = squaresPerRow * squaresPerRow;    
+    const squareSize = 100 / squaresPerRow
+
+    const style = document.createElement('style');
+    style.textContent = `.square {
+        min-width: ${squareSize}%;
+        min-height: ${squareSize}%;
+    }`;
+    document.head.appendChild(style);
+
+        createGrid(numOfSquares)
+    });
 }
 
 
