@@ -15,8 +15,8 @@
           <div class="menu-box">
             <div class="color-alts">
             <div class="color-boxes">
-                <button id="color-square"></button>
-                <button id="color-square"></button>
+                <button class="color-square" id="pen-color"></button>
+                <button class="color-square" id="background-color"></button>
             </div>
             <div class="color-text">
                 <div class="text">Pen Color</div>
@@ -24,14 +24,14 @@
             </div>
           </div>
           <div class="color-options">
-            <button id="text2">Color Fill</button>
-            <button id="text2">Color Grabber</button>
+            <button class="text2" id="fill">Color Fill</button>
+            <button class="text2" id="grabber">Color Grabber</button>
           </div>
           <div class="toggle-options">
-            <button id="text2">Toggle Eraser</button>
-            <button id="text2">Toggle Rainbow</button>
-            <button id="text2">Toggle Shading</button>
-            <button id="text2">Toggle Lighten</button>
+            <button class="text2" id="eraser">Toggle Eraser</button>
+            <button class="text2" id="rainbow">Toggle Rainbow</button>
+            <button class="text2" id="shading">Toggle Shading</button>
+            <button class="text2" id="lighten">Toggle Lighten</button>
           </div>
           <div class="slider-box">
             <input type="range" value="24" min="1" max="60" id="range-slider" 
@@ -45,11 +45,13 @@
             <span id="range-value">24</span>
           </p>
           <div class="grid-n-clear">
-          <button id="text2">Toggle Grid Lines</button>
-          <button id="text2">Clear</button>
+          <button class="text2" id="grid-lines">Toggle Grid Lines</button>
+          <button class="text2" id="clear">Clear</button>
         </div>
         </div>
-      <div class="sketch-box"></div>
+      <div class="sketch-box">
+        <div id="grid-container"></div>
+      </div>
     </div>
 <script src="main.js"></script>
 </body>
