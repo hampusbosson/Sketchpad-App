@@ -47,11 +47,6 @@ rainbow.addEventListener('click', () => {
     isRainbowActive = !isRainbowActive;
 });
 
-gridLines.addEventListener('click', () => {
-    isGridlinesActive = !isGridlinesActive;
-    clearGridLines();
-});
-
 eraser.addEventListener('click', () => {
     isEraserActive = !isEraserActive; 
 });
@@ -83,17 +78,6 @@ function isMouseDown() {
     if(mouseIsDown == true) {
         return true;
     }
-}
-
-function clearGridLines() { 
-    const squares = document.querySelectorAll('.square');
-    squares.forEach(square => {
-        if(isGridlinesActive) {
-        square.style.border = 'none';
-    } else {
-        square.style.border = '1px solid #64fcf2'
-    }
-  });
 }
 
 function getRandom() {
