@@ -7,5 +7,9 @@ of the individual squares, the square will "light up" in the color of your choic
 
 Features include: 
 - Option to change the number of squares in the sketchpad.
-- Different color options.
+- Different pen-color options.
 - Option to clear the pad and start over.
+- Eraser function.
+- Rainbow function.
+- Shading function.
+- Lightening function.
