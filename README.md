@@ -7,9 +7,16 @@ of the individual squares, the square will "light up" in the color of your choic
 
 Features include: 
 - Option to change the number of squares in the sketchpad.
-- Different color options.
+- Different pen-color options.
 - Option to clear the pad and start over.
+<<<<<<< HEAD
 
 [Live App](https://hampusbosson.github.io/Sketchpad-App/)
 
 ![alt text](image.png)
+=======
+- Eraser function.
+- Rainbow function.
+- Shading function.
+- Lightening function.
+>>>>>>> ae79aeeaaa616567216906904d0642bddc45eec6
