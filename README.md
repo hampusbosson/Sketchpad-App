@@ -9,3 +9,7 @@ Features include:
 - Option to change the number of squares in the sketchpad.
 - Different color options.
 - Option to clear the pad and start over.
+
+[Live App](https://hampusbosson.github.io/Sketchpad-App/)
+
+![alt text](image.png)
