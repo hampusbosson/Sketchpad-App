@@ -13,7 +13,6 @@ Features include:
 - Rainbow function.
 - Shading function.
 - Lightening function.
-<<<<<<< HEAD
 
 [Live App](https://hampusbosson.github.io/Sketchpad-App/)
 
